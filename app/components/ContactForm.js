@@ -3,7 +3,9 @@ const ContactForm = (
         name="contact-form"
         method="POST"
         action="contact/?success=true"
+        data-netlify="true"
     >
+    <input type="hidden" name="form-name" value="contact-form"/>
     <label htmlFor="name">Name *</label>
     <input
         id="name"
